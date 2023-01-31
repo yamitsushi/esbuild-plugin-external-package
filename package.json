@@ -1,0 +1,36 @@
+{
+  "name": "esbuild-plugin-external-package",
+  "version": "1.0.0",
+  "description": "ESbuild plugin that sets all dependencies to external",
+  "author": "Russel Dave <yamitsushi@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "keywords": [
+    "ESBuild",
+    "esbuild",
+    "plugin"
+  ],
+  "files": [
+    "./cjs.cjs",
+    "./esm.mjs",
+    "./index.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./esm.mjs",
+      "require": "./cjs.cjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamitsushi/esbuild-plugin-external-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yamitsushi/esbuild-plugin-external-package/issues"
+  },
+  "homepage": "https://github.com/yamitsushi/esbuild-plugin-external-package#readme",
+  "devDependencies": {
+    "esbuild": "^0.17.5"
+  }
+}
